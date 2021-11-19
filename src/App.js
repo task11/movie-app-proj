@@ -15,13 +15,24 @@ function App() {
 
   return (
     <div>
-      {loading ? <strong>Loading ...</strong> : null}
-      <h1>Movie List</h1>
-      <ul>
-        {movie.map((item, id) => {
-          return <li key={id}>제목 : {item.title} 평점 : {item.rating} </li>;
-        })}
-      </ul>
+      {loading ? (
+        <strong>Loading ...</strong>
+      ) : (
+        <div>
+          <div>
+            {movie.map((item) => (
+              <div key={item.id}>
+                <img src={item.medium_cover_image}></img>
+                <div>
+                  <h2>{item.title}</h2>{item.rating}
+                  <p>{item.summary}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
     </div>
   );
 }
