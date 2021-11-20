@@ -26,6 +26,11 @@ function App() {
                 <div>
                   <h2>{item.title}</h2>{item.rating}
                   <p>{item.summary}</p>
+                  <ul>
+                    {item.genres.map((g) => {
+                      return <li key={g}>{g}</li>
+                    })}
+                  </ul>
                 </div>
               </div>
             ))}
