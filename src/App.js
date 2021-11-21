@@ -10,7 +10,7 @@ function App() {
   return <Router>
     <Routes>
       <Route
-        path={process.env.PUBLIC_URL + "/movie"}
+        path="/movie"
         element={<Detail />}
       />
       <Route
