@@ -10,11 +10,11 @@ function App() {
   return <Router>
     <Routes>
       <Route
-        path="/movie"
+        path={process.env.PUBLIC_URL + "/movie"}
         element={<Detail />}
       />
       <Route
-        path="/"
+        path={process.env.PUBLIC_URL + "/"}
         element={<Home />}
       />
 
