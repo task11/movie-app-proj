@@ -10,7 +10,7 @@ function App() {
   return <Router>
     <Routes>
       <Route
-        path="/movie"
+        path="/movie/:id"
         element={<Detail />}
       />
       <Route
