@@ -21,7 +21,6 @@ function Detail() {
       year={movieDetail.year}
       genres={movieDetail.genres}
       description={movieDetail.description_full}
-      date={movieDetail.date_uploaded}
       coverImg={movieDetail.large_cover_image}
     />
   );
